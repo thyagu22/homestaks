@@ -1,0 +1,200 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{URL}}">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">Home Tasks </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/iniciar">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Iniciar Tarefa</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Utilidades
+
+        </div>
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/realizadas">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Tarefas Realizadas</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/fechamento">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Fechamento</span></a>
+        </li>
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+
+
+            <div class="container-fluid">
+                <h1>Tarefas</h1>
+                <hr>
+            </div>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Tabela de Tarefas</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                            <tr class="table-active">
+                                <th>Tarefa</th>
+                                <th>Descrição</th>
+                                <th>Qtd por Semana</th>
+                                <th>Prioridade</th>
+                                <th>Tempo</th>
+                                <th>Gratificação</th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+
+                            <tr>
+                                <th scope="row">Faxina de Sexta</th>
+                                <td>Faxina completa de sexta-feira</td>
+                                <td>1</td>
+                                <td>Arthur</td>
+                                <td>03:30:00s</td>
+                                <td>R$3,50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Guardar louça</td>
+                                <td>Guardar a Louça que já está limpa!</td>
+                                <td>Livre</td>
+                                <td>Alice</td>
+                                <td>00:10:00s</td>
+                                <td>R$1,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Limpeza de segunda-feira</td>
+                                <td>Organizar o que estiver desorganizado e limpar o que estiver sujo.</td>
+                                <td>1</td>
+                                <td>Arthur</td>
+                                <td>00:30:00s</td>
+                                <td>$2,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Arrumar Quarto</td>
+                                <td>Arrumar seu quarto e limpar.</td>
+                                <td>5</td>
+                                <td>Livre</td>
+                                <td>00:15:00s</td>
+                                <td>$1,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lavar louça</td>
+                                <td>Lavar a Louça suja da pia no final do dia!</td>
+                                <td>5</td>
+                                <td>Livre</td>
+                                <td>00:15:00s</td>
+                                <td>$1,50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Limpeza de Quarta</td>
+                                <td>Limpeza rápida de Quarta</td>
+                                <td>1</td>
+                                <td>Arthur</td>
+                                <td>01:30:00s</td>
+                                <td>$2,50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saco de lixo</td>
+                                <td>Colocar saco de lixo em todas as lixeiras.</td>
+                                <td>3</td>
+                                <td>Alice</td>
+                                <td>00:05:00s</td>
+                                <td>$0,50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Limpar Chão</td>
+                                <td>Limpar o chão da casa</td>
+                                <td>2</td>
+                                <td>Livre</td>
+                                <td>00:15:00s</td>
+                                <td>$1,50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Guardar Roupas</td>
+                                <td>Guardar roupas limpas do varal</td>
+                                <td>2</td>
+                                <td>Alice</td>
+                                <td>00:10:00</td>
+                                <td>$1,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- End of Main Content -->
+
+
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

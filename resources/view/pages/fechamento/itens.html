@@ -1,0 +1,43 @@
+<form method="post">
+<tr>
+  <th scope="row">{{codigo}}
+    <input name="id" value="{{codigo}}" hidden="hidden">
+  </th>
+  <td>{{filho}}</td>
+  <td>R${{total}}</td>
+  <td>{{data}}</td>
+  <td>
+    <a href="{{URL}}/fechamento">
+      <button type="button" class="btn btn-primary">Revisar</button>
+    </a>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#{{codigo}}">Excluir
+    </button>
+
+    <div class="modal fade" id="{{codigo}}" tabindex="-1" aria-labelledby="msgExclusao" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="msgExclusao">Excluir Fechamento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Código: {{codigo}}<br>
+            Varlor: R${{total}}<br>
+            De: {{filho}}<br>
+            Data: {{data}}<br>
+            Dejesa realmente excluir esse Fechamento?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </td>
+</tr>
+</form>
+
+

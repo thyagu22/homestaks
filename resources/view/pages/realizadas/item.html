@@ -1,0 +1,39 @@
+<form method="post">
+
+<tr>
+  <th scope="row">{{codigo}}
+    <input name="id" value="{{codigo}}" hidden="hidden">
+  </th>
+  <td>{{nome}}</td>
+  <td>{{tarefa}}</td>
+  <td>{{data}}</td>
+  <td>
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#{{codigo}}">Excluir
+  </button>
+
+      <div class="modal fade" id="{{codigo}}" tabindex="-1" aria-labelledby="msgExclusao" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="msgExclusao">Excluir Tarefa</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Código: {{codigo}}<br>
+              Tarefa: {{tarefa}}<br>
+              De: {{nome}}<br>
+              Data: {{data}}<br>
+              Dejesa realmente excluir essa tarefa?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary">Excluir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </td>
+</tr>
+</form>
+

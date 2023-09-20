@@ -1,0 +1,259 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{URL}}">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">Home Tasks </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/tarefas">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Tabela de Tarefas</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Utilidades
+
+        </div>
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/realizadas">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Tarefas Realizadas</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{URL}}/fechamento">
+                <i class="fas fa-fw fa-arrow-left"></i>
+                <span>Fechamento</span></a>
+        </li>
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <h1>Iniciar tarefa</h1>
+                <hr>
+
+            </div>
+            <!-- /.container-fluid //list-group-flush d-block gap-12 border-0 -->
+
+
+            <div class="container-fluid">
+                <form class="form-group" method="post">
+                    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                        <div class="filhoa list-group list-group-flush d-block gap-2 border-0">
+
+                            <label class="filho list-group-item list-group-item-action rounded-3 py-3"
+                                   for="lili" id="alice">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="nome" id="lili"
+                                       value="1"  required>
+                                <h3>Alice</h3>
+                                <span class="d-block small opacity-50">Selecione para registrar tarefa em nome de Alice</span>
+                            </label>
+
+
+                            <label class="filho list-group-item list-group-item-action rounded-3 py-3"
+                                   for="tutu" id="arthur">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="nome" id="tutu"
+                                       value="2" required>
+                                <h3>Arthur</h3>
+                                <span class="d-block small opacity-50">Selecione para registrar tarefa em nome de Arthur</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                        <div class="test list-group list-group-content">
+
+                            <label class="list-group-item list-group-item-action list-group-item-danger"
+                                   for="guardar_louca" id="GL">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="guardar_louca" value="gl">
+                                Guardar louça
+                                <span class="d-block small opacity-50">Guardar a Louça que já está limpa!</span>
+                            </label>
+
+                            <label class="list-group-item list-group-item-action list-group-item-success"
+                                   for="limpeza_segunda" id="LS">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="limpeza_segunda" value="ls">
+                                Limpeza de segunda-feira
+                                <span class="d-block small opacity-50">Limpeza rápida de segunda-feira!</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-danger"
+                                   for="arrumar_quarto" id="AQ">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="arrumar_quarto" value="aq">
+                                Arrumar Quarto
+                                <span class="d-block small opacity-50">Arrumar seu quarto.</span>
+                            </label>
+
+                            <label class="list-group-item list-group-item-action list-group-item-danger"
+                                   for="lavar_louca" id="LL">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="lavar_louca" value="ll">
+                                Lavar louça
+                                <span class="d-block small opacity-50">Lavar a Louça suja da pia!</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-success"
+                                   for="limpeza_quarta" id="LQ">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="limpeza_quarta" value="lq">
+                                Limpeza de Quarta
+                                <span class="d-block small opacity-50">Limpeza rápida de Quarta</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-danger"
+                                   for="saco_lixo" id="SL">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="saco_lixo" value="sl">
+                                Saco de lixo
+                                <span class="d-block small opacity-50">Colocar saco de lixo.</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-danger"
+                                   for="limpar_chao" id="LC">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="limpar_chao" value="lc">
+                                Limpar Chão
+                                <span class="d-block small opacity-50">Limpar o chão da casa.</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-success"
+                                   for="faxina_sexta" id="FS">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="faxina_sexta" value="fs">
+                                Faxina de SEXTA
+                                <span class="d-block small opacity-50">Faxina completa de sexta-feira</span>
+                            </label>
+
+                            <label class="list-group-item  list-group-item-action list-group-item-danger"
+                                   for="guardar_roupas" id="GR">
+                                <input class="list-group-item-check pe-none" type="radio" hidden="hidden" name="tarefa"
+                                       id="guardar_roupas" value="gr">
+                                Guardar Roupas
+                                <span class="d-block small opacity-50">Guardar roupas limpas.</span>
+                            </label>
+                        </div>
+                    </div>
+
+            <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                <div class="my-2"></div>
+                <button class="btn btn-success btn-icon-split btn-lg" type="submit">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                    <span class="text">Salvar</span>
+                </button>
+                <div class="my-2"></div>
+                <a href="{{URL}}" class="btn btn-danger btn-icon-split btn-lg">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-eraser"></i>
+                                        </span>
+                    <span class="text">Cancelar</span>
+                </a>
+                <div class="my-2"></div>
+                <a href="{{URL}}/realizadas" class="btn btn-secondary btn-icon-split btn-lg">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-flag"></i>
+                                        </span>
+                    <span class="text">Concluidas</span>
+                </a>
+
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- End of Main Content -->
+
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    listgroup = document.querySelector(".test").querySelectorAll("label");
+    console.log(listgroup);
+
+    listgroup.forEach(element => {
+        element.addEventListener("click", function (){
+            listgroup.forEach(nav=>nav.classList.remove("active"))
+
+            this.classList.add("active")
+
+        })
+    });
+
+    filho = document.querySelector(".filhoa").querySelectorAll("label");
+    console.log(filho);
+
+    filho.forEach(element => {
+        element.addEventListener("click", function (){
+            filho.forEach(nav=>nav.classList.remove("active"))
+
+            this.classList.add("active")
+
+        })
+    });
+
+
+</script>
+
+
