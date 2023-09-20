@@ -414,7 +414,7 @@ public static function getFechamentoFilho($request, $id){
     }
 
     /**
-     * Exclui feedback do DB
+     * Exclui feedback do DBs
      * @param Request $request
      * @param integer $id
      */
