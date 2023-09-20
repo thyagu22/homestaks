@@ -1,1 +1,1 @@
-Plataforma hometasks, gerenciamento de tarefas de casa!
+Plataforma hometasks, gerencie seus filhos nas tarefas de casa!
